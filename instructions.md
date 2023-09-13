@@ -133,6 +133,43 @@ restart();`
 
   `useQuizStore.getState().restart();`
 
+### Selecting from the State
+
+Depending on your chosen state management approach, you'll fetch the quiz data differently:
+
+### For the `useContext` approach:
+
+In the `CurrentQuestionUseContext` component, you can use the `useQuiz` hook to access the quiz state. Here's how you can fetch the current question:
+
+jsxCopy code
+
+`const { questions, currentQuestionIndex } = useQuiz();
+const question = questions[currentQuestionIndex];`
+
+To fetch the answer to a specific question:
+
+jsxCopy code
+
+`const { answers } = useQuiz();
+const answer = answers.find((a) => a.questionId === question.id);`
+
+### For the Zustand approach:
+
+In the `CurrentQuestionZustand` component, you can use the `useQuizStore` to access the quiz state. Here's how you can fetch the current question:
+
+jsxCopy code
+
+`const questions = useQuizStore((state) => state.questions);
+const currentQuestionIndex = useQuizStore((state) => state.currentQuestionIndex);
+const question = questions[currentQuestionIndex];`
+
+To fetch the answer to a specific question:
+
+jsxCopy code
+
+`const answers = useQuizStore((state) => state.answers);
+const answer = answers.find((a) => a.questionId === question.id);`
+
 ### Your page should be responsive:
 
 - showing 4 albums per row on desktop
