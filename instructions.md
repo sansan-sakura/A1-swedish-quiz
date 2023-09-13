@@ -52,6 +52,87 @@ Your main objective is to choose one of these state management systems—either 
 - How are you dealing with the styling? CSS or Styled components?
 - What stretch goals are you aiming for?
 
+### The Questions Array
+
+You can find the `quiz` state setup in two different locations based on the state management approach:
+
+- For the `useContext` approach: `./src/context/QuizContext.js`
+- For the Zustand approach: `./src/stores/quizStore.js`
+
+In both setups, there's a `questions` array with a couple of placeholder objects for you to get started with. You should replace these questions with your own ones.
+
+You're free to restructure things if you want to, but it's recommended to stick with the current setup where each question has:
+
+- `id` - a unique identifier for the question. You can just keep incrementing numbers for these.
+- `questionText` - this is the text which is displayed to the user for this question. The example questions use a string of text, but you could turn this into an object if you wanted to include images or other data.
+- `options` - an array of possible answers to the question which your user will choose from. Again, in the placeholder questions, we've used strings, but you can switch them to objects if you want to add additional details such as image URLs.
+- `correctAnswerIndex` - the index of the item in the `options` array which is the correct answer.
+
+### State Management Actions
+
+Depending on your chosen state management approach, you'll interact with the quiz state differently:
+
+### `submitAnswer`
+
+Use this function when a user selects an answer to the question. You need to pass an object with a key `questionId` whose value is a valid question id (from the question objects) and an `answerIndex` which is the index of the answer they chose.
+
+- Show submitAnswer example for `useContext`
+
+  Given the following question, for example:
+
+  jsxCopy code
+
+  `{ id: 1, questionText: 'Who set the Olympic record for the 100m dash in 2012?', options: ['Usain Bolt', 'Justin Gatlin', 'Tyson Gay', 'Asafa Powell'], correctAnswerIndex: 0 }`
+
+  If the user clicks 'Asafa Powell' (index 3 in the options array), you'd use the context like this:
+
+  jsxCopy code
+
+  `const { submitAnswer } = useQuiz();
+submitAnswer(1, 3);`
+
+- Show submitAnswer example for Zustand
+
+  Using the same question, with Zustand:
+
+  jsxCopy code
+
+  `useQuizStore.getState().submitAnswer(1, 3);`
+
+### `goToNextQuestion`
+
+After the user clicks an answer and you show them if they were correct or not, you should show a button to continue to the next question. When they click that button, use this function.
+
+- Show goToNextQuestion example for `useContext`
+
+  jsxCopy code
+
+  `const { goToNextQuestion } = useQuiz();
+goToNextQuestion();`
+
+- Show goToNextQuestion example for Zustand
+
+  jsxCopy code
+
+  `useQuizStore.getState().goToNextQuestion();`
+
+### `restart`
+
+At the end of the quiz, if you want to start over, you can use this function.
+
+- Show restart example for `useContext`
+
+  jsxCopy code
+
+  `const { restart } = useQuiz();
+restart();`
+
+- Show restart example for Zustand
+
+  jsxCopy code
+
+  `useQuizStore.getState().restart();`
+
 ### Your page should be responsive:
 
 - showing 4 albums per row on desktop
