@@ -4,7 +4,7 @@
   </a>
 </h1>
 
-# Music Releases
+# State Management Quiz
 
 Replace this readme with your own information about your project.
 

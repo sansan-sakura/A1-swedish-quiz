@@ -1,39 +1,40 @@
 # Instructions
 
-## 🎶 Music releases
+## State Management Quiz - Zustand or Context API
 
-Since the focus of this assignment is to practice with React, we've downloaded a response from the Spotify API which you can use, rather than calling the API yourself.
+This week, the task is to build a quiz game using **either** `**Zustand**` or React's **`useContext`** for state management. It's a multiple-choice quiz, so you'll need to define your own questions and a bunch of possible answers to present to your users.
 
-## 🎶 How to use the Spotify data & construct your components 🤓
+It's up to you to decide what your quiz should be about! You could come up with something fun and whacky like the Buzzfeed quizzes, or you could test your user's general knowledge with trivia questions.
 
-In the `/src/data.json`, we've included an API response from Spotify which contains data for 50 recent releases. You can `import` this JSON file into a component using `import data from './data.json'` (which we've already done for you in the App component).
+### Requirements
 
-The result of importing the JSON is a variable called `data` which includes the full JSON response. Your task is to use this, along with `.map()` to mount an 'Album' component for each album. Within those components, you could then break things up further. For example, your app could have a structure like this:
+✓ Your quiz should have at least 5 questions.
 
-- `App` component which has the `data`
-  - `Album` component which is rendered using `.map()` and which you pass the album data into using props.
-    - `ArtistName` component which is rendered using `.map()` using each item in the `artists` array. The `Album` component to show the artist name and a link.
+✓ When the user selects an answer, it should show if they were correct or not.
 
-This is just a suggestion - how you decide to structure your components is completely up to you.
+✓ While going through the quiz, it should show which question you're on, or how many are left - for example 'Question 5 / 15' or '10 questions left'.
 
-## Folder Structure
+✓ When the user has answered all the questions, they should get to a summary screen that tells them how many they got correct or incorrect.
 
-- App.jsx - (Parent Component) - 🍿 Provided in Boiler Plate 🍿
-- Album.jsx - (Child Component of App.jsx) - 🤓 Not Provided, to be created 🤓
-  - AlbumName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
-  - ArtistName.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
-  - CoverImage.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
-  - Header.jsx - (Child Component of Album.jsx) - 🤓 Not Provided, to be created 🤓
+✓ You should challenge yourself to make use of redux by making small components that interact with the store - don't just go for one big component.
 
-### Extra Files
+✓ Don't forget CSS! Your quiz should be well-styled.
 
-- data.json - JSON file containing 1 key called `"albums"` containing keys mimiquing a Spotify API object endpoint.
+## Getting Started 🤓
 
-## You should display the following for each album:
+In this project setup, we've provided two distinct state management approaches for your quiz game: Zustand and React's `useContext`. Your task is to collaborate as a team and utilize these state management techniques to render the quiz questions sequentially. Each question should display the question text and its associated options. Upon selecting an answer, the application should indicate whether the chosen answer is correct or incorrect, and then guide the user to the subsequent question.
 
-- album cover image
-- album name
-- the name of each artist involved with a comma between
+For the `useContext` approach:
+
+- We've initialized a context for the quiz in the `./src/context/QuizContext.js` file. This context will manage the state of your quiz and provide functions to interact with it.
+- The starting point for this approach is the `./src/components/CurrentQuestionUseContext.jsx` component. This component fetches the current question from the context and displays it.
+
+For the Zustand approach:
+
+- The Zustand store for the quiz is set up in the `./src/stores/quizStore.js` file. This store will hold the state of your quiz and offer functions to manipulate it.
+- The starting point for the Zustand approach is the `./src/components/CurrentQuestionZustand.jsx` component. This component retrieves the current question from the Zustand store and renders it.
+
+Your main objective is to integrate these state management systems into your application, ensuring a seamless quiz experience for the user. Remember to render the questions, the possible answers, and provide feedback on the user's selection before progressing to the next question.
 
 ## Hover effects:
 
