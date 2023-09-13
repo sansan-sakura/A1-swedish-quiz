@@ -97,23 +97,23 @@ Use this function when a user selects an answer to the question. You need to pas
   Given the following question, for example:
 
   ```JS
-  `{ id: 1, questionText: 'Who set the Olympic record for the 100m dash in 2012?', options: ['Usain Bolt', 'Justin Gatlin', 'Tyson Gay', 'Asafa Powell'], correctAnswerIndex: 0 }`
+  { id: 1, questionText: 'Who set the Olympic record for the 100m dash in 2012?', options: ['Usain Bolt', 'Justin Gatlin', 'Tyson Gay', 'Asafa Powell'], correctAnswerIndex: 0 }
   ```
 
   If the user clicks 'Asafa Powell' (index 3 in the options array), you'd use the context like this:
 
-  jsxCopy code
-
-  `const { submitAnswer } = useQuiz();
-submitAnswer(1, 3);`
+```JS
+  const { submitAnswer } = useQuiz();
+  submitAnswer(1, 3);
+```
 
 - Show submitAnswer example for Zustand
 
   Using the same question, with Zustand:
 
-  jsxCopy code
-
-  `useQuizStore.getState().submitAnswer(1, 3);`
+```JS
+  useQuizStore.getState().submitAnswer(1, 3);
+```
 
 ### `goToNextQuestion`
 
@@ -121,16 +121,16 @@ After the user clicks an answer and you show them if they were correct or not, y
 
 - Show goToNextQuestion example for `useContext`
 
-  jsxCopy code
-
-  `const { goToNextQuestion } = useQuiz();
-goToNextQuestion();`
+```JS
+  const { goToNextQuestion } = useQuiz();
+  goToNextQuestion();
+```
 
 - Show goToNextQuestion example for Zustand
 
-  jsxCopy code
-
-  `useQuizStore.getState().goToNextQuestion();`
+  ```JS
+   useQuizStore.getState().goToNextQuestion();
+  ```
 
 ### `restart`
 
@@ -138,16 +138,20 @@ At the end of the quiz, if you want to start over, you can use this function.
 
 - Show restart example for `useContext`
 
-  jsxCopy code
-
-  `const { restart } = useQuiz();
-restart();`
+```JS
+const { restart } = useQuiz();
+restart();
+```
 
 - Show restart example for Zustand
 
-  jsxCopy code
+```JS
+  useQuizStore.getState().restart();
+```
 
-  `useQuizStore.getState().restart();`
+```JS
+useQuizStore.getState().submitAnswer(1, 3);
+```
 
 ### Selecting from the State
 
@@ -157,37 +161,41 @@ Depending on your chosen state management approach, you'll fetch the quiz data d
 
 In the `CurrentQuestionUseContext` component, you can use the `useQuiz` hook to access the quiz state. Here's how you can fetch the current question:
 
-jsxCopy code
-
-`const { questions, currentQuestionIndex } = useQuiz();
-const question = questions[currentQuestionIndex];`
+```JS
+  const { questions, currentQuestionIndex } = useQuiz();
+  const question = questions[currentQuestionIndex];
+```
 
 To fetch the answer to a specific question:
 
-jsxCopy code
-
-`const { answers } = useQuiz();
-const answer = answers.find((a) => a.questionId === question.id);`
+```JS
+  const { answers } = useQuiz();
+  const answer = answers.find((a) => a.questionId === question.id);
+```
 
 ### For the Zustand approach:
 
 In the `CurrentQuestionZustand` component, you can use the `useQuizStore` to access the quiz state. Here's how you can fetch the current question:
 
-jsxCopy code
-
-`const questions = useQuizStore((state) => state.questions);
-const currentQuestionIndex = useQuizStore((state) => state.currentQuestionIndex);
-const question = questions[currentQuestionIndex];`
+```JS
+  const questions = useQuizStore((state) => state.questions);
+  const currentQuestionIndex = useQuizStore((state) => state.currentQuestionIndex);
+  const question = questions[currentQuestionIndex];
+```
 
 To fetch the answer to a specific question:
 
-jsxCopy code
-
-`const answers = useQuizStore((state) => state.answers);
-const answer = answers.find((a) => a.questionId === question.id);`
+```JS
+  const answers = useQuizStore((state) => state.answers);
+  const answer = answers.find((a) => a.questionId === question.id);
+```
 
 ### Hints and tips to complete the project 🤓
 
 This project is quite open ended, so you should make sure to start with a sketch and make sure your team is aligned on how things should work and who's going to do what. It's up to you to decide how you want to work in your teams; whether you break up into smaller groups and work on specific features, or whether you work as a big mob.
 
 Whatever you do, remember to break tasks up into small chunks and don't take on too many things at once!
+
+```
+
+```

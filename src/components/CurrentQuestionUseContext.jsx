@@ -9,7 +9,8 @@ export const CurrentQuestionUseContext = () => {
   }
 
   return (
-    <div>
+    <div className="managed-component">
+      <h2>Using Context APi Approach</h2>
       <h1>Question: {question.questionText}</h1>
     </div>
   );

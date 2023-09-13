@@ -12,7 +12,8 @@ export const CurrentQuestionZustand = () => {
   }
 
   return (
-    <div>
+    <div className="managed-component">
+      <h2>Using Context APi Zustand</h2>
       <h1>Question: {question.questionText}</h1>
     </div>
   );
