@@ -92,24 +92,24 @@ Depending on your chosen state management approach, you'll interact with the qui
 
 Use this function when a user selects an answer to the question. You need to pass an object with a key `questionId` whose value is a valid question id (from the question objects) and an `answerIndex` which is the index of the answer they chose.
 
-- Show submitAnswer example for `useContext`
+- submitAnswer example for `useContext`
 
-  Given the following question, for example:
+Given the following question, for example:
 
-  ```JS
-  { id: 1, questionText: 'Who set the Olympic record for the 100m dash in 2012?', options: ['Usain Bolt', 'Justin Gatlin', 'Tyson Gay', 'Asafa Powell'], correctAnswerIndex: 0 }
-  ```
+```JS
+{ id: 1, questionText: 'Who set the Olympic record for the 100m dash in 2012?', options: ['Usain Bolt', 'Justin Gatlin', 'Tyson Gay', 'Asafa Powell'], correctAnswerIndex: 0 }
+```
 
-  If the user clicks 'Asafa Powell' (index 3 in the options array), you'd use the context like this:
+If the user clicks 'Asafa Powell' (index 3 in the options array), you'd use the context like this:
 
 ```JS
   const { submitAnswer } = useQuiz();
   submitAnswer(1, 3);
 ```
 
-- Show submitAnswer example for Zustand
+- submitAnswer example for Zustand
 
-  Using the same question, with Zustand:
+Using the same question, with Zustand:
 
 ```JS
   useQuizStore.getState().submitAnswer(1, 3);
@@ -119,31 +119,31 @@ Use this function when a user selects an answer to the question. You need to pas
 
 After the user clicks an answer and you show them if they were correct or not, you should show a button to continue to the next question. When they click that button, use this function.
 
-- Show goToNextQuestion example for `useContext`
+- goToNextQuestion example for `useContext`
 
 ```JS
   const { goToNextQuestion } = useQuiz();
   goToNextQuestion();
 ```
 
-- Show goToNextQuestion example for Zustand
+- goToNextQuestion example for Zustand
 
-  ```JS
-   useQuizStore.getState().goToNextQuestion();
-  ```
+```JS
+ useQuizStore.getState().goToNextQuestion();
+```
 
 ### `restart`
 
 At the end of the quiz, if you want to start over, you can use this function.
 
-- Show restart example for `useContext`
+- restart example for `useContext`
 
 ```JS
 const { restart } = useQuiz();
 restart();
 ```
 
-- Show restart example for Zustand
+- restart example for Zustand
 
 ```JS
   useQuizStore.getState().restart();
