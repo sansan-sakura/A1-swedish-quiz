@@ -186,15 +186,8 @@ jsxCopy code
 `const answers = useQuizStore((state) => state.answers);
 const answer = answers.find((a) => a.questionId === question.id);`
 
-### Your page should be responsive:
+### Hints and tips to complete the project 🤓
 
-- showing 4 albums per row on desktop
-- 2 per row on tablet
-- 1 per row on mobile.
+This project is quite open ended, so you should make sure to start with a sketch and make sure your team is aligned on how things should work and who's going to do what. It's up to you to decide how you want to work in your teams; whether you break up into smaller groups and work on specific features, or whether you work as a big mob.
 
-## Design
-
-🎶 You should follow the design screenshots as closely as possible. We've provided icons for the play, heart and more info icons when hovering on an album. Use the following for fonts:
-
-- Album title - 14px Helvetica #ffffff
-- Artist name - 14px Helvetica #a0a0a0
+Whatever you do, remember to break tasks up into small chunks and don't take on too many things at once!
