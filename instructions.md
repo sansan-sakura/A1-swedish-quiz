@@ -8,33 +8,33 @@ It's up to you to decide what your quiz should be about! You could come up with 
 
 ### Requirements
 
-✓ Your quiz should have at least 5 questions.
+- Your quiz should have at least 5 questions.
 
-✓ When the user selects an answer, it should show if they were correct or not.
+- When the user selects an answer, it should show if they were correct or not.
 
-✓ While going through the quiz, it should show which question you're on, or how many are left - for example 'Question 5 / 15' or '10 questions left'.
+- While going through the quiz, it should show which question you're on, or how many are left - for example 'Question 5 / 15' or '10 questions left'.
 
-✓ When the user has answered all the questions, they should get to a summary screen that tells them how many they got correct or incorrect.
+- When the user has answered all the questions, they should get to a summary screen that tells them how many they got correct or incorrect.
 
-✓ You should challenge yourself to make use of redux by making small components that interact with the store - don't just go for one big component.
+- You should challenge yourself to make use of redux by making small components that interact with the store - don't just go for one big component.
 
-✓ Don't forget CSS! Your quiz should be well-styled.
+- Don't forget CSS! Your quiz should be well-styled.
 
 ### Stretch Goals
 
-✓ After selecting an answer, highlight the correct answer if they chose incorrectly.
+- After selecting an answer, highlight the correct answer if they chose incorrectly.
 
-✓ Create a visual progress bar showing how many questions are left to be answered.
+- Create a visual progress bar showing how many questions are left to be answered.
 
-✓ Use images or videos to make your questions and answers look richer.
+- Use images or videos to make your questions and answers look richer.
 
-✓ Give a score for correct answers and deduct points for incorrect answers. If the user goes below a certain score, they lose!
+- Give a score for correct answers and deduct points for incorrect answers. If the user goes below a certain score, they lose!
 
-✓ Enrich the summary with information about what questions they got correct and what questions they should practice more.
+- Enrich the summary with information about what questions they got correct and what questions they should practice more.
 
-✓ Implement a countdown timer to answer the question - if the user doesn't answer in time, they get the question wrong.
+- Implement a countdown timer to answer the question - if the user doesn't answer in time, they get the question wrong.
 
-✓ Implement a timer to show the user how long it took to complete the quiz.
+- Implement a timer to show the user how long it took to complete the quiz.
 
 ## Getting Started 🤓
 
