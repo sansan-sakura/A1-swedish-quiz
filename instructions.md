@@ -195,7 +195,3 @@ To fetch the answer to a specific question:
 This project is quite open ended, so you should make sure to start with a sketch and make sure your team is aligned on how things should work and who's going to do what. It's up to you to decide how you want to work in your teams; whether you break up into smaller groups and work on specific features, or whether you work as a big mob.
 
 Whatever you do, remember to break tasks up into small chunks and don't take on too many things at once!
-
-```
-
-```
