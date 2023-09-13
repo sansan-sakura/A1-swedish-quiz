@@ -34,18 +34,23 @@ For the Zustand approach:
 - The Zustand store for the quiz is set up in the `./src/stores/quizStore.js` file. This store will hold the state of your quiz and offer functions to manipulate it.
 - The starting point for the Zustand approach is the `./src/components/CurrentQuestionZustand.jsx` component. This component retrieves the current question from the Zustand store and renders it.
 
-Your main objective is to integrate these state management systems into your application, ensuring a seamless quiz experience for the user. Remember to render the questions, the possible answers, and provide feedback on the user's selection before progressing to the next question.
+Your main objective is to choose one of these state management systems—either useContext or Zustand—and integrate it into your application. Ensure a smooth quiz experience for the user by rendering the questions, presenting the possible answers, and providing feedback on the user's selection before progressing to the next question. While both approaches are provided for learning purposes, for this project, you should commit to just one to maintain clarity and consistency in your codebase.
 
-## Hover effects:
+### Planning
 
-- When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch)
-- When you hover over the play button, it should grow (see the design sketch)
-- Hovering an artist name or an album name should match the design sketch
+**You should discuss these questions before you fork and clone the repo:**
 
-## External Routing:
-
-- When you click on the album, it should link to the album's external URL in the data
-- When you click on an artist, it should link to the artist's external URL in the data
+- Will you use a planning tool (Jamboard, Figma) to plan your design/app structure?
+- How are you going to work in the team? Mob or smaller groups etc.
+- What is your quiz about?
+- Have you decided on a state management approach? Zustand or **`useContext`**?
+- Which are your (at least) 5 questions and answers? (Remember, multiple choices required)
+- How are you going to show the progress? i.e 1 / 5, 20%, 4 questions left.
+- How will the user select the answer? Dropdown, selecting with keyboard commands, buttons, images?
+- What will the summary screen look like?
+- What components do you need?
+- How are you dealing with the styling? CSS or Styled components?
+- What stretch goals are you aiming for?
 
 ### Your page should be responsive:
 
