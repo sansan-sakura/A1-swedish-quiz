@@ -20,6 +20,22 @@ It's up to you to decide what your quiz should be about! You could come up with 
 
 ✓ Don't forget CSS! Your quiz should be well-styled.
 
+### Stretch Goals
+
+✓ After selecting an answer, highlight the correct answer if they chose incorrectly.
+
+✓ Create a visual progress bar showing how many questions are left to be answered.
+
+✓ Use images or videos to make your questions and answers look richer.
+
+✓ Give a score for correct answers and deduct points for incorrect answers. If the user goes below a certain score, they lose!
+
+✓ Enrich the summary with information about what questions they got correct and what questions they should practice more.
+
+✓ Implement a countdown timer to answer the question - if the user doesn't answer in time, they get the question wrong.
+
+✓ Implement a timer to show the user how long it took to complete the quiz.
+
 ## Getting Started 🤓
 
 In this project setup, we've provided two distinct state management approaches for your quiz game: Zustand and React's `useContext`. Your task is to collaborate as a team and utilize these state management techniques to render the quiz questions sequentially. Each question should display the question text and its associated options. Upon selecting an answer, the application should indicate whether the chosen answer is correct or incorrect, and then guide the user to the subsequent question.
