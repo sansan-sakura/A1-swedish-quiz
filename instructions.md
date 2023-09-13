@@ -80,9 +80,9 @@ Use this function when a user selects an answer to the question. You need to pas
 
   Given the following question, for example:
 
-  jsxCopy code
-
+  ```JS
   `{ id: 1, questionText: 'Who set the Olympic record for the 100m dash in 2012?', options: ['Usain Bolt', 'Justin Gatlin', 'Tyson Gay', 'Asafa Powell'], correctAnswerIndex: 0 }`
+  ```
 
   If the user clicks 'Asafa Powell' (index 3 in the options array), you'd use the context like this:
 
