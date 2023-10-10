@@ -16,8 +16,6 @@ It's up to you to decide what your quiz should be about! You could come up with 
 
 - When the user has answered all the questions, they should get to a summary screen that tells them how many they got correct or incorrect.
 
-- You should challenge yourself to make use of redux by making small components that interact with the store - don't just go for one big component.
-
 - Don't forget CSS! Your quiz should be well-styled.
 
 ### Stretch Goals
