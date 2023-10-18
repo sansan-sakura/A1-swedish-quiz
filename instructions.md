@@ -2,9 +2,9 @@
 
 ## State Management Quiz - Zustand or Context API
 
-This week, the task is to build a quiz game using **either** `**Zustand**` or React's **`useContext`** for state management. It's a multiple-choice quiz, so you'll need to define your own questions and a bunch of possible answers to present to your users.
+This week, the task is to build a quiz game using **EITHER** `Zustand` or React's **`useContext`** for state management. It's a multiple-choice quiz, so you'll need to define your own questions and a bunch of possible answers to present to your users.
 
-It's up to you to decide what your quiz should be about! You could come up with something fun and whacky like the Buzzfeed quizzes, or you could test your user's general knowledge with trivia questions.
+It's up to you to decide what your quiz should be about! You could come up with something fun and whacky like the Buzzfeed quizzes, or you could test your user's general knowledge with trivia questions. Additionally, as you design your quiz application, you'll need to make an important decision regarding state management. You can choose between using Zustand or the Context API, each offering its own set of advantages and considerations. Ensure you research both options to determine which best suits your project's needs."
 
 ### Requirements
 
@@ -15,8 +15,6 @@ It's up to you to decide what your quiz should be about! You could come up with 
 - While going through the quiz, it should show which question you're on, or how many are left - for example 'Question 5 / 15' or '10 questions left'.
 
 - When the user has answered all the questions, they should get to a summary screen that tells them how many they got correct or incorrect.
-
-- You should challenge yourself to make use of redux by making small components that interact with the store - don't just go for one big component.
 
 - Don't forget CSS! Your quiz should be well-styled.
 
