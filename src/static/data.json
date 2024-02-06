@@ -1,0 +1,154 @@
+{
+  "questions": [
+    {
+      "question": "What is the Swedish word for 'dog'?",
+      "choices": ["Katt", "Hund", "Häst", "Ko"],
+      "correct_answer": "Hund"
+    },
+    {
+      "question": "Which of the following means 'thank you very much' in Swedish?",
+      "choices": ["Tack", "Hej då", "Ursäkta", "Tack så mycket"],
+      "correct_answer": "Tack så mycket"
+    },
+    {
+      "question": "How do you say 'please' in Swedish?",
+      "choices": ["Snälla", "Tack", "Ursäkta", "Ja"],
+      "correct_answer": "Snälla"
+    },
+    {
+      "question": "What is the Swedish word for 'cat'?",
+      "choices": ["Hund", "Katt", "Ko", "Häst"],
+      "correct_answer": "Katt"
+    },
+    {
+      "question": "Which of the following means 'good morning' in Swedish?",
+      "choices": ["Godnatt", "God morgon", "Hej", "Tack"],
+      "correct_answer": "God morgon"
+    },
+    {
+      "question": "What does 'jag förstår inte' mean in English?",
+      "choices": ["I understand you", "I don't understand", "I am lost", "I am sorry"],
+      "correct_answer": "I don't understand"
+    },
+    {
+      "question": "How do you say 'I'm sorry' in Swedish?",
+      "choices": ["Tack", "Ursäkta", "Förlåt", "Hej"],
+      "correct_answer": "Förlåt"
+    },
+    {
+      "question": "What is the Swedish word for 'thank you'?",
+      "choices": ["Hej", "Tack", "Ursäkta", "Ja"],
+      "correct_answer": "Tack"
+    },
+    {
+      "question": "Which of the following means 'good night' in Swedish?",
+      "choices": ["God morgon", "God natt", "Hej då", "Ursäkta"],
+      "correct_answer": "God natt"
+    },
+    {
+      "question": "What does 'jag heter' mean in English?",
+      "choices": ["I hate", "I love", "I'm called", "I'm sorry"],
+      "correct_answer": "I'm called"
+    },
+    {
+      "question": "What is the Swedish word for 'goodbye'?",
+      "choices": ["Hej då", "Adjö", "Tack", "Ursäkta"],
+      "correct_answer": "Adjö"
+    },
+    {
+      "question": "Which of the following means 'please' in Swedish?",
+      "choices": ["Snälla", "Tack", "Ursäkta", "Ja"],
+      "correct_answer": "Snälla"
+    },
+    {
+      "question": "How do you say 'excuse me' in Swedish?",
+      "choices": ["Ursäkta", "Tack", "Hej", "Ja"],
+      "correct_answer": "Ursäkta"
+    },
+    {
+      "question": "What does 'ursäkta mig' mean in English?",
+      "choices": ["Thank you", "Excuse me", "Please", "Sorry"],
+      "correct_answer": "Excuse me"
+    },
+    {
+      "question": "What is the Swedish word for 'sorry'?",
+      "choices": ["Tack", "Ursäkta", "Förlåt", "Hej"],
+      "correct_answer": "Förlåt"
+    },
+    {
+      "question": "Which of the following means 'yes' in Swedish?",
+      "choices": ["Ja", "Nej", "Tack", "Hej"],
+      "correct_answer": "Ja"
+    },
+    {
+      "question": "What does 'nej' mean in English?",
+      "choices": ["Yes", "No", "Hello", "Goodbye"],
+      "correct_answer": "No"
+    },
+    {
+      "question": "How do you say 'no' in Swedish?",
+      "choices": ["Ja", "Nej", "Tack", "Hej"],
+      "correct_answer": "Nej"
+    },
+    {
+      "question": "What is the Swedish word for 'thanks'?",
+      "choices": ["Hej", "Tack", "Ursäkta", "Ja"],
+      "correct_answer": "Tack"
+    },
+    {
+      "question": "Which of the following means 'thank you very much' in Swedish?",
+      "choices": ["Tack", "Hej då", "Ursäkta", "Tack så mycket"],
+      "correct_answer": "Tack så mycket"
+    },
+    {
+      "question": "What does 'jag talar svenska' mean in English?",
+      "choices": ["I speak Swedish", "I understand Swedish", "I learn Swedish", "I am Swedish"],
+      "correct_answer": "I speak Swedish"
+    },
+    {
+      "question": "How do you say 'I understand' in Swedish?",
+      "choices": ["Jag förstår", "Jag talar", "Jag älskar", "Jag hatar"],
+      "correct_answer": "Jag förstår"
+    },
+    {
+      "question": "What is the Swedish word for 'welcome'?",
+      "choices": ["Hej då", "Välkommen", "Tack", "Ursäkta"],
+      "correct_answer": "Välkommen"
+    },
+    {
+      "question": "Which of the following means 'hello' in Swedish?",
+      "choices": ["Hej", "Godmorgon", "Godkväll", "Adjö"],
+      "correct_answer": "Hej"
+    },
+    {
+      "question": "What does 'godmorgon' mean in English?",
+      "choices": ["Good evening", "Good night", "Good morning", "Goodbye"],
+      "correct_answer": "Good morning"
+    },
+    {
+      "question": "How do you say 'good evening' in Swedish?",
+      "choices": ["God morgon", "God natt", "God kväll", "Hej då"],
+      "correct_answer": "God kväll"
+    },
+    {
+      "question": "What is the Swedish word for 'please'?",
+      "choices": ["Snälla", "Tack", "Ursäkta", "Ja"],
+      "correct_answer": "Snälla"
+    },
+    {
+      "question": "Which of the following means 'thank you' in Swedish?",
+      "choices": ["Ja", "Nej", "Tack", "Hej"],
+      "correct_answer": "Tack"
+    },
+    {
+      "question": "What does 'ursäkta mig' mean in English?",
+      "choices": ["Thank you", "Excuse me", "Please", "Sorry"],
+      "correct_answer": "Excuse me"
+    },
+    {
+      "question": "What is the Swedish word for 'sorry'?",
+      "choices": ["Tack", "Ursäkta", "Förlåt", "Hej"],
+      "correct_answer": "Förlåt"
+    }
+  ]
+}
