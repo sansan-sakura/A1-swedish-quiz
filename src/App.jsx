@@ -1,14 +1,9 @@
-import { CurrentQuestionUseContext } from "./components/CurrentQuestionUseContext";
 import { CurrentQuestionZustand } from "./components/CurrentQuestionZustand";
-import { QuizProvider } from "./context/QuizContext";
 
 export const App = () => {
   return (
-    <QuizProvider>
-      <div>
-        <CurrentQuestionUseContext />
-        <CurrentQuestionZustand />
-      </div>
-    </QuizProvider>
+    <div className="flex justify-center pt-[200px] min-h-screen w-full bg-amber-50">
+      <CurrentQuestionZustand />
+    </div>
   );
 };
